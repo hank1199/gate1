@@ -4,9 +4,9 @@ on:
   schedule:
     - cron: "	0 */4 * * *"
   workflow_dispatch:
-  contents: read
-  pages: write
-  id-token: write
+   contents: read
+   pages: write
+   id-token: write
 
 concurrency:
   group: gate-check
