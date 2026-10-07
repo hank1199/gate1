@@ -3,6 +3,7 @@ name: VPN Gate Node Check
 on:
   schedule:
     - cron: "0 */4 * * *"
+
 permissions:
   contents: read
   pages: write
