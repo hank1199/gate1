@@ -1,12 +1,14 @@
 name: VPN Gate Node Check
 
 on:
- schedule:
-   - cron: "	0 */4 * * *"
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */4 * * *' # 每天 UTC 00:00 (北京时间 08:00) 自动运行
+
 permissions:
-   contents: read
-   pages: write
-   id-token: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: gate-check
